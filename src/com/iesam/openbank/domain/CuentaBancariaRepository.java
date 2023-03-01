@@ -7,7 +7,7 @@ public interface CuentaBancariaRepository {
 
     public void save(CuentaBancaria cuentaBancaria);
 
-    public void findById(String codigoCuenta);
+    public CuentaBancaria findById(String codigoCuenta);
 
     public void delete(String codigoCuenta);
 

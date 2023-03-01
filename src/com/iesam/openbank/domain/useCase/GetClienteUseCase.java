@@ -1,6 +1,7 @@
 package com.iesam.openbank.domain.useCase;
 
 import com.iesam.openbank.domain.ClienteRepository;
+import com.iesam.openbank.domain.models.Cliente;
 
 public class GetClienteUseCase {
 
@@ -10,8 +11,8 @@ public class GetClienteUseCase {
         this.clienteRepository=clienteRepository;
     }
 
-    public void execute(String codigoCliente){
-        clienteRepository.findById(codigoCliente);
+    public Cliente execute(String codigoCliente){
+        return clienteRepository.findById(codigoCliente);
     }
 
 }

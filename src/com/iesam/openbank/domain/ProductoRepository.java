@@ -7,7 +7,7 @@ public interface ProductoRepository {
 
     public void save(Producto producto);
 
-    public void findById(String codigoProducto);
+    public Producto findById(String codigoProducto);
 
     public void delete(String codigoProducto);
 }

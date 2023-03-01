@@ -7,7 +7,7 @@ public interface ClienteRepository {
 
     public void save(Cliente cliente);
 
-    public void findById(String codigoCliente);
+    public Cliente findById(String codigoCliente);
 
     public void delete(String codigoCliente);
 }
