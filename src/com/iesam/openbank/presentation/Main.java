@@ -5,9 +5,6 @@ import com.iesam.openbank.domain.models.Cliente;
 public class Main {
 
     public static void main(String[]Args){
-
-        Cliente cliente = new Cliente();
-        cliente.setNombre("pepe");
     }
 
 }
