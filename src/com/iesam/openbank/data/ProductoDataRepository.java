@@ -19,8 +19,8 @@ public class ProductoDataRepository implements ProductoRepository {
     }
 
     @Override
-    public void findById(String codigoProducto) {
-        dataSource.findById(codigoProducto);
+    public Producto findById(String codigoProducto) {
+        return dataSource.findById(codigoProducto);
     }
 
     @Override

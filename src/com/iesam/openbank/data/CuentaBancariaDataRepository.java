@@ -18,8 +18,8 @@ public class CuentaBancariaDataRepository implements CuentaBancariaRepository {
     }
 
     @Override
-    public void findById(String codigoCuenta) {
-        dataSource.findById(codigoCuenta);
+    public CuentaBancaria findById(String codigoCuenta) {
+        return dataSource.findById(codigoCuenta);
     }
 
     @Override
