@@ -19,9 +19,8 @@ public class ClienteDataRepository implements ClienteRepository {
     }
 
     @Override
-    public void findById(String codigoCliente) {
-        dataSource.findById(codigoCliente);
-        return null;
+    public Cliente findById(String codigoCliente) {
+        return dataSource.findById(codigoCliente);
     }
 
     @Override
